@@ -15,5 +15,5 @@ const Operators = {
 }
 
 submit.addEventListener('click', () => {
-       result.value = Operators.calc(+num1.value, +num2.value, op.value);
+       result.value = (Operators.calc(+num1.value, +num2.value, op.value)).toFixed(6) * 1;
 });
